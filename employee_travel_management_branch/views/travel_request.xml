@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <data>
+    <record model="ir.ui.view" id="travel_request_form_inherit">
+        <field name="name">employee.travel.request.form.inherit</field>
+        <field name="model">employee.travel.request</field>
+        <field name="inherit_id" ref="employee_travel_managment.travel_request_form"/>
+        <field name="arch" type="xml">
+            <field name="employee_id" position="attributes">
+                <attribute name="domain">[('branch_id', '=', branch_id)]</attribute>
+            </field>
+            <field name="company_id" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </field>
+            <field name="company_id" position="after">
+                <field name="branch_id"/>
+            </field>
+            <field name="request_id" position="attributes">
+                <attribute name="domain">[('branch_id', '=', branch_id)]</attribute>
+            </field>
+            <field name="confirm_id" position="attributes">
+                <attribute name="domain">[('branch_id', '=', branch_id)]</attribute>
+            </field>
+            <field name="approve_id" position="attributes">
+                <attribute name="domain">[('branch_id', '=', branch_id)]</attribute>
+            </field>
+            <field name="analytic_account_id" position="attributes">
+                <attribute name="domain">[('branch_id', '=', branch_id)]</attribute>
+            </field>
+        </field>
+    </record>
+  </data>
+</odoo>
