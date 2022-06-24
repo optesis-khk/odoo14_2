@@ -22,8 +22,7 @@
         'views/views.xml',
         'views/templates.xml',
         'views/report_bon_commande_cms.xml',
-        'views/report_cms_mission.xml',
-        'views/cms_layout.xml'
+       
     ],
     # only loaded in demonstration mode
     'demo': [
