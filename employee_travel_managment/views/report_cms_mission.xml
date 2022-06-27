@@ -5,7 +5,7 @@
         
   
         
-        <record id="cms_report.paperformat_cms_report_mission" model="report.paperformat">
+        <record id="employee_travel_managment.paperformat_cms_report_mission" model="report.paperformat">
        <field name="name">Asiento contable</field>
        <field name="orientation">Portrait</field>
         <field name="default" eval="True"/>
@@ -27,12 +27,12 @@
         
          <report
             id="cms_report_mission_id"
-            model="purchase.order"
+            model="employee.travel.request"
             string="cms report mission"
             report_type="qweb-pdf"
-            name="cms_report.cms_report_mission"
-            file="cms_report.cms_report_mission"
-            paperformat="cms_report.paperformat_cms_report_mission"
+            name="employee_travel_managment.cms_report_mission"
+            file="employee_travel_managment.cms_report_mission"
+            paperformat="employee_travel_managment.paperformat_cms_report_mission"
             />
         
                  
@@ -43,7 +43,7 @@
       <t t-foreach="docs" t-as="o">
          
           <div class="page">
-               <t t-call="cms_report.header_new"/>
+               <t t-call="employee_travel_managment.header_new"/>
              
               
               
@@ -54,7 +54,9 @@
                    <table  class="table table-sm o_main_table" style="border-collapse: collapse; width:100%">
                     <tr>
                        <td rowspan="2" align="center" class="bpro_border_left;header" style="border:1px solid;font-size:16px;" >
+                           <!--
                             <img t-if="o.company_id.logo" t-att-src="image_data_uri(o.company_id.logo)" style="max-height: 80px;" alt="Logo"/>
+-->
                       </td>
                      <td rowspan="2"  align="center" class="align-middle" style="border:1px solid;font-size:16px;">
                         <strong>ENREGISTREMENT <br/>ORDRE DE MISSION<br/>DIRECTION GENERAL ET DIRECTION <br/> REGIONALE</strong>
@@ -695,4 +697,3 @@
     
   </data>
 </odoo>
-

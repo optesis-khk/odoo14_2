@@ -13,8 +13,7 @@ Ce module permet de gérer les budgets dans plusieurs branches
         'security/travel_request_ir_rule.xml',
         'views/travel_request.xml',
         'views/hr_employee.xml',
-         'views/report_cms_mission.xml',
-        'views/cms_layout_mission.xml',
+         
     ],
     'test': [],
     'installable': True,

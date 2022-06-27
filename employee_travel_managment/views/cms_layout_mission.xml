@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <odoo>
     <data>
+        
+     
+        
         <template id="custom_external_layout_cms">
-
-
             <div class="header">
                 <div>
                    <table  class="table table-sm o_main_table">
