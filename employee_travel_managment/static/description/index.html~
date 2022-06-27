@@ -1,0 +1,146 @@
+<section class="oe_container">
+   <div class="oe_row oe_spaced">
+           <h2 class="oe_slogan">Employee Travel Management and Expense Management</h2>
+<p> This module will allow you to manage travel of your employees and expense advance and submit expense claim.</p>
+       <p class="oe_mt32">
+       <h4>Created Menus :</h4><ul>
+                    <li>Travel/Travel Request</li>
+                    <li>Travel/Travel Request/Employee Travel Request</li>
+                    <li>Travel/Travel Request/Travel Requests To Approve</li>
+                </ul>
+                <h4> Defined Reports</h4><ul>
+                    <li>Travel Request</li>
+                </ul>
+                <p style="color:blue;">Workflow: Draft ->Confirmed -> Canceled -> Approved -> Rejected  ->Returned  ->Expenses Submitted</p>
+       </p>
+   </div>
+</section>
+<section class="oe_container">
+   <div class="oe_row oe_spaced">
+       <h3 class="oe_slogan" style="color:green;">Login With <b> Employee Andrew </b>Create Travel Request</h3>
+<p></p>
+       <div class="oe_demo oe_screenshot">
+           <img src="s1.png">
+       </div>
+   </div>
+</section>
+<section class="oe_container">
+   <div class="oe_row oe_spaced">
+       <div class="oe_demo oe_screenshot">
+           <img src="s2.png">
+       </div>
+   </div>
+</section>
+<section class="oe_container">
+   <div class="oe_row oe_spaced">
+       <h3 class="oe_slogan" style="color:green;">Employee Andrew Request for Advance payment </h3>
+       <div class="oe_demo oe_screenshot">
+           <img src="advance_payment_requests.png">
+       </div>
+   </div>
+</section>
+<section class="oe_container">
+   <div class="oe_row oe_spaced">
+       <h3 class="oe_slogan" style="color:green;">Employee Andrew Confirmed Travel Request </h3>
+       <div class="oe_demo oe_screenshot">
+           <img src="s3.png">
+       </div>
+   </div>
+</section>
+<section class="oe_container">
+   <div class="oe_row oe_spaced">
+       <h3 class="oe_slogan" style="color:blue;">Login With Herry<b> Officer Showing List of Confirm - Travel Request</h3>
+       <div class="oe_demo oe_screenshot">
+           <img src="s4.png">
+       </div>
+   </div>
+</section>
+<section class="oe_container">
+   <div class="oe_row oe_spaced">
+        <h3 class="oe_slogan" style="color:blue;">Confirmed - Travel Request Form</h3>
+       <div class="oe_demo oe_screenshot">
+           <img src="s6.png">
+       </div>
+   </div>
+</section>
+<section class="oe_container">
+   <div class="oe_row oe_spaced">
+       <h3 class="oe_slogan" style="color:blue;">Officer Herry Add Other Information</h3>
+       <div class="oe_demo oe_screenshot">
+           <img src="s5.png">
+       </div>
+   </div>
+</section>
+
+<section class="oe_container">
+   <div class="oe_row oe_spaced">
+       <h3 class="oe_slogan" style="color:red;">Officer Herry</b> Approve Comfirmed Travel Request</h3>
+       <div class="oe_demo oe_screenshot">
+           <img src="s7.png">
+       </div>
+   </div>
+</section>
+<section class="oe_container">
+   <div class="oe_row oe_spaced">
+       <h3 class="oe_slogan" style="color:red;">Officer Herry</b> Add Expenses after return</h3>
+       <div class="oe_demo oe_screenshot">
+           <img src="s8.png">
+       </div>
+   </div>
+</section>
+<section class="oe_container">
+   <div class="oe_row oe_spaced">
+       <h3 class="oe_slogan" style="color:red;">Officer Herry</b> Create Expense Sheet from click on Crete Expenses Button</h3>
+       <div class="oe_demo oe_screenshot">
+           <img src="s9.png">
+       </div>
+   </div>
+</section>
+<section class="oe_container">
+   <div class="oe_row oe_spaced">
+       <div class="oe_demo oe_screenshot">
+           <img src="s10.png">
+       </div>
+   </div>
+</section>
+<section class="oe_container">
+   <div class="oe_row oe_spaced">
+       <h3 class="oe_slogan" style="color:red;">Open Expense Sheet From given Expenses Smart Button</h3>
+       <div class="oe_demo oe_screenshot">
+           <img src="s11.png">
+       </div>
+   </div>
+</section>
+
+<section class="oe_container">
+   <div class="oe_row oe_spaced">
+       <h3 class="oe_slogan" style="color:red;">Print PDF Report - Travel Request</h3>
+       <div class="oe_demo oe_screenshot">
+           <img src="pdf0.png">
+           <img src="pdf1.png">
+           <img src="pdf2.png">
+           <img src="pdf3.png">
+       </div>
+   </div>
+</section>
+<section class="oe_container" >
+   <div class="oe_row oe_spaced">
+       <div class="oe_span6">
+           <div class="oe_picture" style="margin: 25px 10%;">
+               <a href="http://www.probuse.com/">
+                   <img src="logo.png">
+               </a>
+           </div>
+       </div>
+       <div class="oe_span6">
+           <p class="oe_mt32">
+               If you need any help or want more additional features,<br/> you may contact us through:<br/>
+               Email: <a href="contact@probuse.com">contact@probuse.com</a> <br/>
+               Website: <a href="http://www.probuse.com/" target='new'><u>www.probuse.com</u></a> <br/>
+               Skype: mustufa_probuse<br/>
+           </p>
+       </div>
+   </div>
+</section>
+
+
