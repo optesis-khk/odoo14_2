@@ -17,3 +17,5 @@ class PurchaseOrderCms(models.Model):
     _inherit = "purchase.order"
 
     date_order_cms = fields.Date('Order Deadline', required=True, default=fields.Datetime.now)
+    
+   

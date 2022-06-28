@@ -162,7 +162,7 @@
                     <td class="text-center" style="border:1px solid;font-size:16px;"><div  style="text-decoration: underline;">VISA <br/>
                         DEPFC</div></td>
                     <td class="text-center" style="border:1px solid;font-size:16px;"><div  style="text-decoration: underline;">VISA <br/>
-                        DPMG</div><br/>  <span t-field="o.finance_manager_id"/></td>
+                        DPMG</div><br/>  <span t-field="o.user_clique_appouver_commande"/></td>
                     <td class="text-center" style="border:1px solid;font-size:16px;"><div  style="text-decoration: underline;">VISA <br/>
                         DIRECTEUR GENERAL</div><br/>  <span t-field="o.director_manager_id"/></td>
                      

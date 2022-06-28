@@ -315,62 +315,134 @@ class PurchaseOrder(models.Model):
                 order.director_manager_approve_date = fields.Datetime.now()
         return super(PurchaseOrder, self)._write(vals)
 
+    
+    #user clicking in button_finance_approval
+    user_clique_finance_approval = fields.Many2one('res.users', 'Current User', compute='_user_finance_approval')
+    
+    def _user_finance_approval(self):
+        for rec in self:
+            if rec.check_finance_approval == True:
+                rec.user_clique_finance_approval = rec.env.uid
 
+    check_finance_approval = fields.Boolean("Check")
+    
    # @api.multi
     def button_finance_approval(self):
         finance_validation_amount = self._get_finance_validation_amount()
         director_validation_amount = self._get_director_validation_amount()
         amount_total = self.currency_id.compute(self.amount_total, self.company_id.currency_id)
         for order in self:
+            order.check_finance_approval = True #by diw
             if amount_total > director_validation_amount:
                 order.write({'state': 'director_approval'})
             if amount_total < director_validation_amount:
                 order.button_director_approval()
         return True
 
-  #  @api.multi
+
+
+    #user qui  clique sur le buttion  director_appov
+    user_clique_director_approv = fields.Many2one('res.users', 'Current User', compute='_user_clique_appouver_commande')
+    
+    def _user_clique_appouver_commande(self):
+        for rec in self:
+            if rec.check_appouver_commande == True:
+                rec.user_clique_director_approv = rec.env.uid
+
+    
+    
+    check_appouver_commande = fields.Boolean("Check")
+    #fin diw
+
+    
     def button_director_approval(self):
         for order in self:
+            order.check_appouver_commande = True
             order.with_context(call_super=True).button_approve()
         return True
+    
+       
+    #by diw
+    #user qui  confirm la commande
+    user_clique_confirm = fields.Many2one('res.users', 'Current User', compute='_user_confirm')
+    
+    def _user_confirm(self):
+        for rec in self:
+            if rec.check_confirm == True:
+                rec.user_clique_confirm = rec.env.uid
 
+    
+    
+    check_confirm = fields.Boolean("Check")
+    
+    
+    def button_confirm(self):
+        for order in self:
+            order.check_confirm = True #by diw
+            if order.state not in ['draft', 'sent']:
+                continue
+            order._add_supplier_to_product()
+            # Deal with double validation process
+            if order._approval_allowed():
+                order.button_approve()
+            else:
+                order.write({'state': 'to approve'})
+            if order.partner_id not in order.message_partner_ids:
+                order.message_subscribe([order.partner_id.id])
+        return True  
+    
+    #by diw
+    #user qui  appouve la commande
+    user_clique_appouver_commande = fields.Many2one('res.users', 'Current User', compute='_user_clique_appouver_commande')
+    
+    def _user_clique_appouver_commande(self):
+        for rec in self:
+            if rec.check_appouver_commande == True:
+                rec.user_clique_appouver_commande = rec.env.uid
+
+    
+    
+    check_appouver_commande = fields.Boolean("Check")
+    #fin diw
 
   #  @api.multi
     def button_approve(self, force=False):
-        for line in self.order_line:
-            if line.price_subtotal and line.available:
-                ok = line.available - line.price_subtotal
-                # if ok < 0 or line.available == 0 :
-                #     raise Warning('Attention votre budget est insusffisant vour effectuer l\'achat')
-        if self._context.get('call_super', False):
-            if self.crossovered_budget_line:
-                for crossovered_line in self.crossovered_budget_line:
-                    self.order_line.create_budget_lines(crossovered_line.general_budget_id.id, crossovered_line.analytic_account_id.id, crossovered_line.general_budget_id.account_ids.ids)
-            return super(PurchaseOrder, self).button_approve()
+        for rec in self:
+            rec.check_appouver_commande = True #by diw
+            for line in self.order_line:
+                if line.price_subtotal and line.available:
+                    ok = line.available - line.price_subtotal
+                    # if ok < 0 or line.available == 0 :
+                    #     raise Warning('Attention votre budget est insusffisant vour effectuer l\'achat')
+            if self._context.get('call_super', False):
+                if self.crossovered_budget_line:
+                    for crossovered_line in self.crossovered_budget_line:
+                        self.order_line.create_budget_lines(crossovered_line.general_budget_id.id, crossovered_line.analytic_account_id.id, crossovered_line.general_budget_id.account_ids.ids)
+                return super(PurchaseOrder, self).button_approve()
 
-        three_step_validation = self._get_three_step_validation()
-        if not three_step_validation:
-            if self.crossovered_budget_line:
-                for crossovered_line in self.crossovered_budget_line:
-                    self.order_line.create_budget_lines(crossovered_line.general_budget_id.id, crossovered_line.analytic_account_id, crossovered_line.general_budget_id.account_ids)
-            return super(PurchaseOrder, self).button_approve()
+            three_step_validation = self._get_three_step_validation()
+            if not three_step_validation:
+                if self.crossovered_budget_line:
+                    for crossovered_line in self.crossovered_budget_line:
+                        self.order_line.create_budget_lines(crossovered_line.general_budget_id.id, crossovered_line.analytic_account_id, crossovered_line.general_budget_id.account_ids)
+                return super(PurchaseOrder, self).button_approve()
 
-        amount_total = self.currency_id.compute(self.amount_total, self.company_id.currency_id)
-        po_double_validation_amount = self.env.user.company_id.currency_id.compute(self.company_id.po_double_validation_amount, self.currency_id)
-        finance_validation_amount = self._get_finance_validation_amount()
-        director_validation_amount = self._get_director_validation_amount()
+            amount_total = self.currency_id.compute(self.amount_total, self.company_id.currency_id)
+            po_double_validation_amount = self.env.user.company_id.currency_id.compute(self.company_id.po_double_validation_amount, self.currency_id)
+            finance_validation_amount = self._get_finance_validation_amount()
+            director_validation_amount = self._get_director_validation_amount()
 
-        if three_step_validation and not self._context.get('call_super', False):
-             for order in self:
-                if amount_total > po_double_validation_amount and order.state != 'to approve':
-                    order.write({'state': 'to approve'})
-                elif amount_total < finance_validation_amount and order.state == 'to approve':
-                    return super(PurchaseOrder, self).button_approve()
-                elif order.state == 'to approve':
-                    order.state = 'finance_approval'
-                else:
-                    return super(PurchaseOrder, self).button_approve()
-        return True
+            if three_step_validation and not self._context.get('call_super', False):
+                 for order in self:
+                    if amount_total > po_double_validation_amount and order.state != 'to approve':
+                        order.write({'state': 'to approve'})
+                    elif amount_total < finance_validation_amount and order.state == 'to approve':
+                        return super(PurchaseOrder, self).button_approve()
+                    elif order.state == 'to approve':
+                        order.state = 'finance_approval'
+                    else:
+                        return super(PurchaseOrder, self).button_approve()
+            return True
 
 class PurchaseOrderLine(models.Model):
     _inherit = 'purchase.order.line'
