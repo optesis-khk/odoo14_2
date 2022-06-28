@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        
+         <record id="hr_structure" model="ir.ui.view">
+        <field name="name">hr.payroll.structure.form</field>
+        <field name="model">hr.payroll.structure</field>
+        <field name="inherit_id" ref="hr_payroll.view_hr_employee_grade_form"/>
+        <field name="arch" type="xml">
+            <data>
+                
+                 <!--<field name="report_id" position="before">
+                   
+                    <field name="company_id"/>
+                </field>-->
+                
+            </data>
+            </field>
+        </record>
+           
+          <record id="hr_salary_regle" model="ir.ui.view">
+        <field name="name">hr.salary.rule.form</field>
+        <field name="model">hr.salary.rule</field>
+        <field name="inherit_id" ref="hr_payroll.hr_salary_rule_form"/>
+        <field name="arch" type="xml">
+            <data>
+                
+                 <field name="code" position="after">
+                   
+                    <field name="company_id"/>
+                </field>
+                
+            </data>
+            </field>
+        </record>
+        
+
+        <record id="hr_salary_cate" model="ir.ui.view">
+        <field name="name">hr.hr.salary.rule.category.form</field>
+        <field name="model">hr.salary.rule.category</field>
+        <field name="inherit_id" ref="hr_payroll.hr_salary_rule_category_form"/>
+        <field name="arch" type="xml">
+            <data>
+                
+                 <field name="code" position="after">
+                   
+                    <field name="company_id"/>
+                </field>
+                
+            </data>
+            </field>
+        </record>
+
+   
+
+  </data>
+</odoo>

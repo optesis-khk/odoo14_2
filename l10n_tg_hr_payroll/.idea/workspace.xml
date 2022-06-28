@@ -1,0 +1,480 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="5aebc9d7-c026-4e55-a8eb-a9ef008d5969" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../optipay/.idea/sonarlint/issuestore/f/b/fb5097a66c279662079e85c889e061a106c5ec0f" beforeDir="false" afterPath="$PROJECT_DIR$/../optipay/.idea/sonarlint/issuestore/f/b/fb5097a66c279662079e85c889e061a106c5ec0f" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../optipay/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../optipay/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../optipay/__manifest__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../optipay/__manifest__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../optipay/models/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../optipay/models/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../optipay/models/detail_versement.py" beforeDir="false" afterPath="$PROJECT_DIR$/../optipay/models/detail_versement.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../optipay/models/employee_bonus.py" beforeDir="false" afterPath="$PROJECT_DIR$/../optipay/models/employee_bonus.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../optipay/models/hr_contract.py" beforeDir="false" afterPath="$PROJECT_DIR$/../optipay/models/hr_contract.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../optipay/models/hr_employee.py" beforeDir="false" afterPath="$PROJECT_DIR$/../optipay/models/hr_employee.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../optipay/models/hr_holidays.py" beforeDir="false" afterPath="$PROJECT_DIR$/../optipay/models/hr_holidays.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../optipay/models/hr_payslip.py" beforeDir="false" afterPath="$PROJECT_DIR$/../optipay/models/hr_payslip.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../optipay/reports/report_bulletin_paie.py" beforeDir="false" afterPath="$PROJECT_DIR$/../optipay/reports/report_bulletin_paie.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../optipay/reports/report_dads.py" beforeDir="false" afterPath="$PROJECT_DIR$/../optipay/reports/report_dads.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../optipay/security/ir.model.access.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../optipay/security/ir.model.access.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../optipay/views/bulletin_paie.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../optipay/views/bulletin_paie.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../optipay/views/detail_versement.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../optipay/views/detail_versement.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../optipay/views/employee_bonus_view.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../optipay/views/employee_bonus_view.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../optipay/views/report_dads_page1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../optipay/views/report_dads_page1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../optipay/views/report_dads_page2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../optipay/views/report_dads_page2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../optipay/wizard/transfer_order.py" beforeDir="false" afterPath="$PROJECT_DIR$/../optipay/wizard/transfer_order.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../optipay/wizard/transfer_order.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../optipay/wizard/transfer_order.xml" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>Total Charges Patronales</find>
+      <find>hr.payslip</find>
+      <find>_compute_rule</find>
+      <find>C11</find>
+      <find>hr.salary.rule</find>
+      <find>Total Retenues</find>
+      <find>COMP</find>
+      <find>Total Re</find>
+      <find>ALLOCATIO</find>
+      <find>alloc_conges</find>
+      <find>retenu</find>
+      <find>C1060</find>
+      <find>alloca</find>
+      <find>Déduction</find>
+      <find>hr_payroll.DED</find>
+      <find>Trimf</find>
+      <find>reinit</find>
+      <find>condition_select</find>
+      <find>amount_select</find>
+      <find>TRIMF</find>
+      <find>sursalai</find>
+      <find>TRANSPO</find>
+      <find>KM</find>
+      <find>1060</find>
+      <find>6621</find>
+      <find>6634</find>
+      <find>6623</find>
+      <find>HS</find>
+      <find>salaire de base</find>
+      <find>Ipres</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../optipay" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/__init__.py" />
+        <option value="$PROJECT_DIR$/security/ir.model.access.csv" />
+        <option value="$PROJECT_DIR$/views/payroll_chart_template_views.xml" />
+        <option value="$PROJECT_DIR$/../optipay/models/employee_compute_pr.py" />
+        <option value="$PROJECT_DIR$/../optipay/models/hr_holidays.py" />
+        <option value="$PROJECT_DIR$/../optipay/models/hr_payslip_employee_inherit.py" />
+        <option value="$PROJECT_DIR$/../optipay/reports/detail_payslip_inherit.py" />
+        <option value="$PROJECT_DIR$/../optipay/reports/report_cotisation_ipres.py" />
+        <option value="$PROJECT_DIR$/../optipay/reports/report_declaration_retenues.py" />
+        <option value="$PROJECT_DIR$/../optipay/reports/report_securite_sociale.py" />
+        <option value="$PROJECT_DIR$/../optipay/reports/report_transfer_order.py" />
+        <option value="$PROJECT_DIR$/../optipay/security/ir.model.access.csv" />
+        <option value="$PROJECT_DIR$/models/payroll_chart_template.py" />
+        <option value="D:/odoo.sh/cabinet/l10n_sn_hr_payroll/__manifest__.py" />
+        <option value="$PROJECT_DIR$/models/optesis_convention_inherit_model.py" />
+        <option value="$PROJECT_DIR$/models/__init__.py" />
+        <option value="$PROJECT_DIR$/../hr_multi_company/models/hr_multi_company.py" />
+        <option value="$PROJECT_DIR$/views/multi_company_view.xml" />
+        <option value="$PROJECT_DIR$/../hr_employee_updation/views/hr_employee_view.xml" />
+        <option value="$PROJECT_DIR$/../../../../../Odoo 12.0/server/odoo/addons/optipay/__manifest__.py" />
+        <option value="$PROJECT_DIR$/models/hr_multi_company.py" />
+        <option value="$PROJECT_DIR$/../optipay/models/__init__.py" />
+        <option value="$PROJECT_DIR$/../optipay/models/hr_salary_rule_inherit.py" />
+        <option value="$PROJECT_DIR$/../optipay/__manifest__.py" />
+        <option value="$PROJECT_DIR$/../optipay/views/hr_salary_rule_inherit_view.xml" />
+        <option value="$PROJECT_DIR$/../optipay/data/salary_rule_data.xml" />
+        <option value="$PROJECT_DIR$/../optipay/models/employee_bonus.py" />
+        <option value="$PROJECT_DIR$/data/chart_data.xml" />
+        <option value="$PROJECT_DIR$/data/salary_rule_foreign.xml" />
+        <option value="$PROJECT_DIR$/../l10n_pcgo/data/l10n_pcgo_chart_data.xml" />
+        <option value="$PROJECT_DIR$/../l10n_pcgo/data/account_chart_template_data.xml" />
+        <option value="$PROJECT_DIR$/data/salary_rule_foreign_data.xml" />
+        <option value="$PROJECT_DIR$/../l10n_pcgo/__manifest__.py" />
+        <option value="$PROJECT_DIR$/data/salary_rule_data.xml" />
+        <option value="$PROJECT_DIR$/__manifest__.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-12" />
+    <option name="y" value="-12" />
+    <option name="width" value="2904" />
+    <option name="height" value="1644" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../stock" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Program Files (x86)\Odoo 12.0e\server\odoo\addons\l10n_sn_hr_payroll\data" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Program Files (x86)\Odoo 12.0e\server\odoo\addons\l10n_sn_hr_payroll\static\description" />
+      <recent name="C:\Program Files (x86)\Odoo 12.0e\server\odoo\addons\l10n_optipay\data" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5aebc9d7-c026-4e55-a8eb-a9ef008d5969" name="Default Changelist" comment="" />
+      <created>1557582535227</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1557582535227</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1295" height="735" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18506752" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Python Console" order="10" />
+      <window_info anchor="bottom" id="SonarLint" order="11" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://D:/odoo.sh/cabinet/l10n_sn_hr_payroll/__manifest__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../../../Odoo 12.0/server/odoo/addons/hr_multi_company/models/hr_multi_company.py" />
+    <entry file="file://F:/save/__manifest__.py" />
+    <entry file="file://F:/odoo_sh/risk_management/optesis_risk_management/__manifest__.py" />
+    <entry file="file://$PROJECT_DIR$/models/optesis_convention_inherit_model.py" />
+    <entry file="file://$PROJECT_DIR$/models/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="30" selection-start-line="3" selection-start-column="30" selection-end-line="3" selection-end-column="30" />
+          <folding>
+            <element signature="e#25#61#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../hr_multi_company/views/hr_multi_company.py" />
+    <entry file="file://$PROJECT_DIR$/../../../../../Odoo 12.0/server/odoo/addons/optipay/models/convention.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../hr_employee_updation/views/hr_employee_view.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="731">
+          <caret line="43" selection-start-line="43" selection-end-line="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../hr_multi_company/views/multi_company_view.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1088">
+          <caret line="64" selection-start-line="64" selection-end-line="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../hr_multi_company/views/hr_company_view.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../../../Odoo 12.0/server/odoo/addons/optipay/data/salary_rule_data.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="73" column="46" selection-start-line="73" selection-start-column="46" selection-end-line="73" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../../../Odoo 12.0/server/odoo/addons/optipay/models/employee_bonus.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-6936" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../../../Odoo 12.0/server/odoo/addons/optipay/__manifest__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="48" selection-start-line="16" selection-start-column="48" selection-end-line="16" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/multi_company_view.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="43" selection-start-line="13" selection-start-column="43" selection-end-line="13" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../hr_multi_company/models/hr_multi_company.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="318">
+          <caret line="46" column="49" selection-start-line="46" selection-start-column="49" selection-end-line="46" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/hr_multi_company.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="29" column="85" selection-start-line="29" selection-start-column="85" selection-end-line="29" selection-end-column="85" />
+          <folding>
+            <element signature="e#25#71#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/description/icon.svg" />
+    <entry file="file://$PROJECT_DIR$/static/description/icon.jpg" />
+    <entry file="file://$PROJECT_DIR$/static/description/icon.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../optipay/models/.ipynb_checkpoints/employee_bonus-checkpoint.py" />
+    <entry file="file://$PROJECT_DIR$/../optipay/models/hr_payslip_employee_inherit.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" selection-start-line="9" selection-end-line="10" selection-end-column="37" />
+          <folding>
+            <element signature="e#33#72#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../optipay/views/order_transfert.xml" />
+    <entry file="file://$PROJECT_DIR$/../optipay/views/transfer_order.xml" />
+    <entry file="file://$PROJECT_DIR$/../optipay/views/report_transfer_order.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="130" column="55" selection-start-line="130" selection-start-column="55" selection-end-line="130" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../optipay/views/bulletin.xml" />
+    <entry file="file://$PROJECT_DIR$/../optipay/models/hr_salary_rule_inherit.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="9" column="38" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
+          <folding>
+            <element signature="e#33#72#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../optipay/models/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="35" column="36" selection-start-line="35" selection-start-column="36" selection-end-line="35" selection-end-column="36" />
+          <folding>
+            <element signature="e#1107#1135#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../optipay/views/account_move_view.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="17" lean-forward="true" selection-start-line="14" selection-start-column="8" selection-end-line="26" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../optipay/views/hr_salary_rule_inherit_view.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="17" lean-forward="true" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../optipay/data/salary_rule_data.xml" />
+    <entry file="file://$PROJECT_DIR$/../optipay/reports/detail_payslip_inherit.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../optipay/reports/report_bulletin_paie.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="103" column="41" selection-start-line="103" selection-start-column="41" selection-end-line="103" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../optipay/reports/report_cotisation_ipres.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1448">
+          <caret line="60" column="59" selection-start-line="60" selection-start-column="59" selection-end-line="60" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../optipay/reports/report_declaration_retenues.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1683">
+          <caret line="104" column="30" selection-start-line="104" selection-start-column="30" selection-end-line="104" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../optipay/reports/report_securite_sociale.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-734" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../optipay/reports/bulletin.xml" />
+    <entry file="file://$PROJECT_DIR$/../optipay/__manifest__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="44" column="44" lean-forward="true" selection-start-line="44" selection-start-column="44" selection-end-line="44" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../optipay/reports/report_transfer_order.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../optipay/models/transfer_order.py" />
+    <entry file="file://$PROJECT_DIR$/../optipay/views/bulletin_paie.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-340">
+          <caret line="16" column="35" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/salary_rule_data.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="304" column="45" selection-start-line="304" selection-start-column="45" selection-end-line="304" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/__manifest__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="36" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/salary_rule_foreign_data.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="522">
+          <caret line="69" column="40" selection-start-line="69" selection-start-column="40" selection-end-line="69" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/convention_collective_data.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/chart_data.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="6" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../l10n_pcgo/data/l10n_pcgo_chart_data.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../l10n_pcgo/__manifest__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="55" lean-forward="true" selection-start-line="22" selection-start-column="55" selection-end-line="22" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../l10n_pcgo/data/account_chart_template_data.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="522">
+          <caret line="6108" column="23" selection-start-line="6108" selection-start-column="19" selection-end-line="6108" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../optipay/models/employee_bonus.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="318" selection-start-line="318" selection-end-line="318" />
+          <folding>
+            <element signature="e#1107#1118#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/payroll_chart_template.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+          <folding>
+            <element signature="e#25#75#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

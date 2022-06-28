@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <!-- Chart Template BY CTD -->
+  <record id="payroll_chart_template" model="payroll.chart.template">
+    <field name="name">Togo Payroll - Salary Rules </field>
+  </record>
+</odoo>

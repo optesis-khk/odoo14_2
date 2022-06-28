@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+   
+   
+    
+    <data noupdate="1">
+        
+        
+        <record model="ir.rule" id="hr_payroll_structure_securits">
+            <field name="name">structures de salaires</field>
+            <field name="model_id" search="[('model','=','hr.payroll.structure')]" model="ir.model"/>
+            <field name="global" eval="True"/>
+           <field name="domain_force">[('company_id', 'in', company_ids)]</field>
+        </record>
+        
+     
+         <record model="ir.rule" id="hr_salary_regle_securits">
+            <field name="name">les règles salariale</field>
+            <field name="model_id" search="[('model','=','hr.salary.rule')]" model="ir.model"/>
+            <field name="global" eval="True"/>
+           <field name="domain_force">[('company_id', 'in', company_ids)]</field>
+        </record>
+      
+         
+        
+         <record model="ir.rule" id="hr_salary_rule_categorys">
+            <field name="name">catégories des règles de salaires</field>
+            <field name="model_id" search="[('model','=','hr.salary.rule.category')]" model="ir.model"/>
+            <field name="global" eval="True"/>
+           <field name="domain_force">[('company_id', 'in', company_ids)]</field>
+        </record>
+        
+        <record model="ir.rule" id="hr_conventions">
+            <field name="name">convention</field>
+            <field name="model_id" search="[('model','=','optesis.convention')]" model="ir.model"/>
+            <field name="global" eval="True"/>
+           <field name="domain_force">[('company_id', 'in', company_ids)]</field>
+        </record>
+      
+        
+          <record model="ir.rule" id="element_company_id">
+            <field name="name">Eléments variables</field>
+            <field name="model_id" search="[('model','=','hr.employee.bonus')]" model="ir.model"/>
+            <field name="global" eval="True"/>
+            <field name="domain_force">[('company_id', 'in', company_ids)]</field>
+        </record>
+        
+        <!--
+         <record model="ir.rule" id="hr_contribution_registe">
+            <field name="name">Contribution registe</field>
+            <field name="model_id" search="[('model','=','hr.contribution.register')]" model="ir.model"/>
+            <field name="global" eval="True"/>
+           <field name="domain_force">[('company_id', 'in', company_ids)]</field>
+        </record>
+        -->
+        
+         <record model="ir.rule" id="hr_contrat_id">
+            <field name="name">Contrat</field>
+            <field name="model_id" search="[('model','=','hr.contract')]" model="ir.model"/>
+            <field name="global" eval="True"/>
+             <field name="domain_force">[('company_id', 'in', company_ids)]</field>
+        </record>
+        
+         <record model="ir.rule" id="hr_pret_id">
+            <field name="name">Prêts</field>
+            <field name="model_id" search="[('model','=','hr.loan')]" model="ir.model"/>
+            <field name="global" eval="True"/>
+             <field name="domain_force">[('company_id', 'in', company_ids)]</field>
+        </record>
+        
+        
+          <record model="ir.rule" id="hr_pret_type_id">
+            <field name="name">Prêts type</field>
+            <field name="model_id" search="[('model','=','hr.loan.type')]" model="ir.model"/>
+            <field name="global" eval="True"/>
+             <field name="domain_force">[('company_id', 'in', company_ids)]</field>
+        </record>
+        
+       <!-- <record model="ir.rule" id="hr_congé_type_id">
+            <field name="name">Congé type</field>
+            <field name="model_id" search="[('model','=','hr.leave.type')]" model="ir.model"/>
+            <field name="global" eval="True"/>
+             <field name="domain_force">[('company_id', 'in', company_ids)]</field>
+        </record>-->
+        
+      
+        
+      
+    </data>
+    
+</odoo>
