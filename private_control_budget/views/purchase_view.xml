@@ -9,7 +9,7 @@
         <xpath expr="//form/header" position="inside">
           <button name="button_finance_approval" string="Finance Approval"
             type="object" class="oe_highlight" states="finance_approval" groups="account.group_account_invoice"/>
-            <button name="button_director_approval" string="cl"
+            <button name="button_director_approval" string="Director approval"
               type="object" class="oe_highlight" states="director_approval" groups="private_control_budget.group_purchase_director"/>
             <button name="%(action_purchase_order_refuse_wiz)d" string="Refuse" 
                         type="action" states="to approve,finance_approval,director_approval"/>
@@ -66,6 +66,11 @@
                       <field name="finance_manager_id"/>
                       <field name="director_manager_id"/>
                       <field name="purchase_user_id" invisible="True"/>
+                      <field name="check_confirm" invisible="True"/>
+                      <field name="check_appouver_commande" invisible="True"/>
+                      <field name="check_finance_approval" invisible="True"/>
+                      <field name="check_director_approv" invisible="True"/>
+                        
                     </group>
                   </group>
                   <group name="refuse_po_grp" string="Refuse Details">

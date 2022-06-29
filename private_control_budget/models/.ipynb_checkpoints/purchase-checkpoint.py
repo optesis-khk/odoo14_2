@@ -321,10 +321,12 @@ class PurchaseOrder(models.Model):
     
     def _user_finance_approval(self):
         for rec in self:
-            if rec.check_finance_approval == True:
-                rec.user_clique_finance_approval = rec.env.uid
+            if self.check_finance_approval == True:
+                self.user_clique_finance_approval = self.env.uid
+            else:
+                self.user_clique_finance_approval = self.user_clique_finance_approval
 
-    check_finance_approval = fields.Boolean("Check")
+    check_finance_approval = fields.Boolean("Check finance_approval")
     
    # @api.multi
     def button_finance_approval(self):
@@ -342,53 +344,59 @@ class PurchaseOrder(models.Model):
 
 
     #user qui  clique sur le buttion  director_appov
-    user_clique_director_approv = fields.Many2one('res.users', 'Current User', compute='_user_clique_appouver_commande')
+    user_clique_director_approv = fields.Many2one('res.users', 'Current User', compute='_user_clique_director_approv')
     
-    def _user_clique_appouver_commande(self):
-        for rec in self:
-            if rec.check_appouver_commande == True:
-                rec.user_clique_director_approv = rec.env.uid
+    
+        
+    @api.onchange('check_director_approv')
+    def _user_clique_director_approv(self):
+        if self.check_director_approv == True:
+            self.user_clique_director_approv = self.env.uid
+        else:
+            self.user_clique_director_approv = self.user_clique_director_approv
+            
 
+    check_director_approv = fields.Boolean("Check director_approv")
     
-    
-    check_appouver_commande = fields.Boolean("Check")
-    #fin diw
-
     
     def button_director_approval(self):
         for order in self:
-            order.check_appouver_commande = True
+            order.check_director_approv = True
             order.with_context(call_super=True).button_approve()
         return True
+    #fin diw
     
        
     #by diw
     #user qui  confirm la commande
-    user_clique_confirm = fields.Many2one('res.users', 'Current User', compute='_user_confirm')
+    user_clique_button_confirm = fields.Many2one('res.users', 'Current User', compute='_user_clique_button_confirm')
     
-    def _user_confirm(self):
-        for rec in self:
-            if rec.check_confirm == True:
-                rec.user_clique_confirm = rec.env.uid
+    @api.onchange('check_confirm')
+    def _user_clique_button_confirm(self):
+        if self.check_confirm == True:
+            self.user_clique_button_confirm = self.env.uid
+        else:
+            self.user_clique_button_confirm = self.user_clique_button_confirm
 
     
     
-    check_confirm = fields.Boolean("Check")
+    check_confirm = fields.Boolean("Check confirm")
     
     
     def button_confirm(self):
-        for order in self:
-            order.check_confirm = True #by diw
-            if order.state not in ['draft', 'sent']:
-                continue
-            order._add_supplier_to_product()
-            # Deal with double validation process
-            if order._approval_allowed():
-                order.button_approve()
-            else:
-                order.write({'state': 'to approve'})
-            if order.partner_id not in order.message_partner_ids:
-                order.message_subscribe([order.partner_id.id])
+        for rec in self:
+            rec.check_confirm = True #by diw
+            for order in self:
+                if order.state not in ['draft', 'sent']:
+                    continue
+                order._add_supplier_to_product()
+                # Deal with double validation process
+                if order._approval_allowed():
+                    order.button_approve()
+                else:
+                    order.write({'state': 'to approve'})
+                if order.partner_id not in order.message_partner_ids:
+                    order.message_subscribe([order.partner_id.id])
         return True  
     
     #by diw
@@ -399,10 +407,11 @@ class PurchaseOrder(models.Model):
         for rec in self:
             if rec.check_appouver_commande == True:
                 rec.user_clique_appouver_commande = rec.env.uid
-
+            else:
+                rec.user_clique_appouver_commande = rec.user_clique_appouver_commande
+                
     
-    
-    check_appouver_commande = fields.Boolean("Check")
+    check_appouver_commande = fields.Boolean("Check ")
     #fin diw
 
   #  @api.multi

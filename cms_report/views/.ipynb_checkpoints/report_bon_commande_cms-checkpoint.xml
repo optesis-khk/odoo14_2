@@ -155,16 +155,16 @@
                   
                        <tr style="height:90px">
                       <td class="text-center" style="border:1px solid;font-size:16px;"><div  style="text-decoration: underline;">VISA <br/>
-                         RESPONSABLES DES ACHATS</div><br/>  <span t-field="o.dept_manager_id"/></td>
+                         RESPONSABLES DES ACHATS</div><br/>  <span t-field="o.user_clique_button_confirm"/></td>
                       <td class="text-center" style="border:1px solid;font-size:16px;"><div  style="text-decoration: underline;">VISA RSGB </div></td> 
                     <td class="text-center" style="border:1px solid;font-size:16px;"><div  style="text-decoration: underline;">VISA <br/>
-                        SECRETAIRE GENERAL</div><br/>  <span t-field="o.finance_manager_id"/></td>
+                        SECRETAIRE GENERAL</div><br/>  <span t-field="o.user_clique_finance_approval"/></td>
                     <td class="text-center" style="border:1px solid;font-size:16px;"><div  style="text-decoration: underline;">VISA <br/>
                         DEPFC</div></td>
                     <td class="text-center" style="border:1px solid;font-size:16px;"><div  style="text-decoration: underline;">VISA <br/>
                         DPMG</div><br/>  <span t-field="o.user_clique_appouver_commande"/></td>
                     <td class="text-center" style="border:1px solid;font-size:16px;"><div  style="text-decoration: underline;">VISA <br/>
-                        DIRECTEUR GENERAL</div><br/>  <span t-field="o.director_manager_id"/></td>
+                        DIRECTEUR GENERAL</div><br/>  <span t-field="o.user_clique_director_approv"/></td>
                      
                    </tr>
                       
