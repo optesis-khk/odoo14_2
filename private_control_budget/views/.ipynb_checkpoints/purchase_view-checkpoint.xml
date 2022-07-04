@@ -14,6 +14,8 @@
             <button name="%(action_purchase_order_refuse_wiz)d" string="Refuse" 
                         type="action" states="to approve,finance_approval,director_approval"/>
               </xpath>
+          
+          
             
               <xpath expr="//form/sheet/notebook/page/field/tree/field[@name='account_analytic_id']" position="before">
                 <field name="account_id"/>
@@ -22,6 +24,9 @@
                 <field name="planned" invisible="1"/>
                 <field name="available" invisible="1"/>
               </xpath>
+          
+           
+          
               <xpath expr="//form/sheet/notebook" position="inside">
                 <page string="Budgets">
                   <field name="crossovered_budget_line" widget="one2many_list" colspan="4" nolabel="1" mode="tree">
@@ -66,10 +71,10 @@
                       <field name="finance_manager_id"/>
                       <field name="director_manager_id"/>
                       <field name="purchase_user_id" invisible="True"/>
-                      <field name="check_confirm" invisible="True"/>
-                      <field name="check_appouver_commande" invisible="True"/>
-                      <field name="check_finance_approval" invisible="True"/>
-                      <field name="check_director_approv" invisible="True"/>
+                
+                     <!-- <field name="check_appouver_commande" invisible="True"/> -->
+                     <!-- <field name="check_finance_approval" invisible="True"/> -->
+                      <!-- <field name="check_director_approv" invisible="True"/> -->
                         
                     </group>
                   </group>

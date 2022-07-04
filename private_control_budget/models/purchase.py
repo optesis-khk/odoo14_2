@@ -317,107 +317,127 @@ class PurchaseOrder(models.Model):
 
     
     #user clicking in button_finance_approval
-    user_clique_finance_approval = fields.Many2one('res.users', 'Current User', compute='_user_finance_approval')
+    #user_clique_finance_approval = fields.Many2one('res.users', 'Current User', compute='_user_finance_approval')
     
-    def _user_finance_approval(self):
-        for rec in self:
-            if self.check_finance_approval == True:
-                self.user_clique_finance_approval = self.env.uid
-            else:
-                self.user_clique_finance_approval = self.user_clique_finance_approval
+    #def _user_finance_approval(self):
+        #if self.check_finance_approval == True:
+            #self.user_clique_finance_approval = self.env.uid
+        #else:
+            #self.user_clique_finance_approval = self.user_clique_finance_approval
 
-    check_finance_approval = fields.Boolean("Check finance_approval")
+    #check_finance_approval = fields.Boolean("Check finance_approval")
     
+    validator_finance_approval = fields.Many2one(comodel_name='res.users', string='finance validation user')
+    
+   
    # @api.multi
     def button_finance_approval(self):
         finance_validation_amount = self._get_finance_validation_amount()
         director_validation_amount = self._get_director_validation_amount()
         amount_total = self.currency_id.compute(self.amount_total, self.company_id.currency_id)
         for order in self:
-            order.check_finance_approval = True #by diw
+            #order.check_finance_approval = True #by diw
             if amount_total > director_validation_amount:
-                order.write({'state': 'director_approval'})
+                order.write({'state': 'director_approval',  'validator_finance_approval': self.env.user.id,})
             if amount_total < director_validation_amount:
+                order.write({'state': 'director_approval',  'validator_finance_approval': self.env.user.id,})
                 order.button_director_approval()
         return True
 
 
 
     #user qui  clique sur le buttion  director_appov
-    user_clique_director_approv = fields.Many2one('res.users', 'Current User', compute='_user_clique_director_approv')
+    #user_clique_director_approv = fields.Many2one('res.users', 'Current User', compute='_user_clique_director_approv')
     
     
         
-    @api.onchange('check_director_approv')
-    def _user_clique_director_approv(self):
-        if self.check_director_approv == True:
-            self.user_clique_director_approv = self.env.uid
-        else:
-            self.user_clique_director_approv = self.user_clique_director_approv
+    #@api.onchange('check_director_approv')
+    #def _user_clique_director_approv(self):
+        #if self.check_director_approv == True:
+            #self.user_clique_director_approv = self.env.uid
+        #else:
+            #self.user_clique_director_approv = self.user_clique_director_approv
             
 
-    check_director_approv = fields.Boolean("Check director_approv")
+    #check_director_approv = fields.Boolean("Check director_approv")
     
+    validator_director_approval = fields.Many2one(comodel_name='res.users', string='director_approval validation user')
     
     def button_director_approval(self):
         for order in self:
-            order.check_director_approv = True
+            #order.check_director_approv = True
             order.with_context(call_super=True).button_approve()
+            order.write({'validator_director_approval': self.env.user.id,})
         return True
     #fin diw
     
        
     #by diw
     #user qui  confirm la commande
-    user_clique_button_confirm = fields.Many2one('res.users', 'Current User', compute='_user_clique_button_confirm')
+    #user_clique_button_confirm = fields.Many2one('res.users', 'Current User', compute='_user_clique_button_confirm',)
     
-    @api.onchange('check_confirm')
-    def _user_clique_button_confirm(self):
-        if self.check_confirm == True:
-            self.user_clique_button_confirm = self.env.uid
-        else:
-            self.user_clique_button_confirm = self.user_clique_button_confirm
+    #@api.onchange('check_confirm')
+    #def _user_clique_button_confirm(self):
+        #if self.check_confirm == True:
+            #self.user_clique_button_confirm = self.env.uid
+        #else:
+            #self.user_clique_button_confirm = self.user_clique_button_confirm
 
     
     
-    check_confirm = fields.Boolean("Check confirm")
-    
-    
+    #check_confirm = fields.Boolean("Check confirm", store="True")
+    order_validator_id_confirm = fields.Many2one(comodel_name='res.users', string='user qui confirm la commande', help='The user validating the order.')
+    #by diw
     def button_confirm(self):
-        for rec in self:
-            rec.check_confirm = True #by diw
-            for order in self:
-                if order.state not in ['draft', 'sent']:
-                    continue
-                order._add_supplier_to_product()
-                # Deal with double validation process
-                if order._approval_allowed():
-                    order.button_approve()
-                else:
-                    order.write({'state': 'to approve'})
+        for order in self:
+            order._add_supplier_to_product()
+            # Deal with double validation process
+            if order._approval_allowed():
+            #\
+                    #or order.user_has_groups('purchase.group_purchase_manager'):
+                order.write({
+                    'order_validator_id_confirm': self.env.user.id,
+                    
+                })
+                order.button_approve()
+            else:
+                order.write({
+                    'state': 'to approve',
+                    'order_validator_id_confirm': self.env.user.id,
+                    
+                })
+                #print("Send message 1")
                 if order.partner_id not in order.message_partner_ids:
                     order.message_subscribe([order.partner_id.id])
-        return True  
+                
+        return {}
+
+    
+        
+        
+    
     
     #by diw
     #user qui  appouve la commande
-    user_clique_appouver_commande = fields.Many2one('res.users', 'Current User', compute='_user_clique_appouver_commande')
+    #user_clique_appouver_commande = fields.Many2one('res.users', 'Current User', compute='_user_clique_appouver_commande')
     
-    def _user_clique_appouver_commande(self):
-        for rec in self:
-            if rec.check_appouver_commande == True:
-                rec.user_clique_appouver_commande = rec.env.uid
-            else:
-                rec.user_clique_appouver_commande = rec.user_clique_appouver_commande
+    #def _user_clique_appouver_commande(self):
+        #for rec in self:
+            #if rec.check_appouver_commande == True:
+                #rec.user_clique_appouver_commande = rec.env.uid
+            #else:
+                #rec.user_clique_appouver_commande = rec.user_clique_appouver_commande
                 
     
-    check_appouver_commande = fields.Boolean("Check ")
+    #check_appouver_commande = fields.Boolean("Check ")
     #fin diw
+    
+    order_validator_id_approve = fields.Many2one(comodel_name='res.users', string=' user qui approuv la commande', help='The user validating the order.')
 
   #  @api.multi
     def button_approve(self, force=False):
         for rec in self:
-            rec.check_appouver_commande = True #by diw
+            #rec.check_appouver_commande = True #by diw
             for line in self.order_line:
                 if line.price_subtotal and line.available:
                     ok = line.available - line.price_subtotal
@@ -445,10 +465,12 @@ class PurchaseOrder(models.Model):
                  for order in self:
                     if amount_total > po_double_validation_amount and order.state != 'to approve':
                         order.write({'state': 'to approve'})
+                        
                     elif amount_total < finance_validation_amount and order.state == 'to approve':
                         return super(PurchaseOrder, self).button_approve()
                     elif order.state == 'to approve':
-                        order.state = 'finance_approval'
+                        order.write({'state': 'finance_approval', 'order_validator_id_approve': self.env.user.id,})
+
                     else:
                         return super(PurchaseOrder, self).button_approve()
             return True
