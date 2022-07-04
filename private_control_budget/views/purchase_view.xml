@@ -142,6 +142,7 @@
             <!--            <field name="domain">[('state', '=', 'director_approval')]</field-->
           </record>
 
+        <!--
           <menuitem name="Purchase Order Finance Approve" id="menu_purchase_order" action="action_finance_manager_approve" parent="account.menu_finance_payables" groups="account.group_account_invoice" sequence="2"/>
 
           <menuitem id="menu_purchase_manager_approve" name="Purchase Order Purchase/Department Approve" action="action_purchase_manager_approve" parent="purchase.menu_procurement_management" groups="private_control_budget.group_department_manager"/>
@@ -150,5 +151,6 @@
 
           <menuitem id="menu_director_manager_approve" name="Purchase Order Director Approve" action="action_director_manager_approve" parent="purchase.menu_procurement_management" groups="private_control_budget.group_purchase_director"/>
 
+      -->
         </data>
       </odoo>
