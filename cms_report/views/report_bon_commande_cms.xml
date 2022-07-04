@@ -164,7 +164,7 @@
                     <td class="text-center" style="border:1px solid;font-size:16px;"><div  style="text-decoration: underline;">VISA <br/>
                         DPMG</div><br/> <span t-field="o.order_validator_id_approve"/> </td> 
                     <td class="text-center" style="border:1px solid;font-size:16px;"><div  style="text-decoration: underline;">VISA <br/>
-                        DIRECTEUR GENERAL</div><br/>  <span t-field="o.validator_finance_approval"/> </td> 
+                        DIRECTEUR GENERAL</div><br/>  <span t-field="o.validator_director_approval"/> </td> 
                      
                    </tr>
                       
