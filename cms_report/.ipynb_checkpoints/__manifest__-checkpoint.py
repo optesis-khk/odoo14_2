@@ -14,7 +14,7 @@
     
 
     # any module necessary for this one to work correctly
-    'depends': ['base', 'purchase', 'private_control_budget'],
+    'depends': ['base', 'purchase', 'private_control_budget_community'],
 
     # always loaded
     'data': [

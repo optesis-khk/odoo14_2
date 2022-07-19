@@ -11,6 +11,7 @@
             type="object" class="oe_highlight" states="finance_approval" groups="account.group_account_invoice"/>
             <button name="button_director_approval" string="Director approval"
               type="object" class="oe_highlight" states="director_approval" groups="private_control_budget.group_purchase_director"/>
+             
             <button name="%(action_purchase_order_refuse_wiz)d" string="Refuse" 
                         type="action" states="to approve,finance_approval,director_approval"/>
               </xpath>
