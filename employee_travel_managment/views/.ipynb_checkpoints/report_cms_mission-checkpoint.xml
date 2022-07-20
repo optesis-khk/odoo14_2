@@ -28,7 +28,7 @@
          <report
             id="cms_report_mission_id"
             model="employee.travel.request"
-            string="cms report mission"
+            string="Ordre de Mission"
             report_type="qweb-pdf"
             name="employee_travel_managment.cms_report_mission"
             file="employee_travel_managment.cms_report_mission"
@@ -94,11 +94,11 @@
                 <!---->
               
                <div>
-                   <p>Il est prescrit à <span t-field="o.employee_id"/> </p>
-                    <p>Fonction <span t-field="o.job_id"/>  </p>
-                    <p>De se rendre en mission <span t-field="o.purpose_travel"/> </p>
+                   <p>Il est prescrit à : <span t-field="o.employee_id"/> </p>
+                    <p>Fonction : <span t-field="o.job_id"/>  </p>
+                    <p>De se rendre en mission : <span t-field="o.purpose_travel"/> </p>
                     <p>
-                        Du <span t-field="o.departure_date"/> <![CDATA[&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;]]>Au <span t-field="o.return_date"/>
+                        Du : <span t-field="o.departure_date"/> <![CDATA[&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;]]>Au : <span t-field="o.return_date"/>
                     </p>
                     
                 </div>
@@ -189,10 +189,10 @@
                 <div>
                    <p>
                       <font style="float:left">Nom : . . . . . . . . . . . . . . . . . . . .. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .</font>
-                       <font style="float:right">Prénom :. . . . . . . . . . . . . . . . . . .. . . . . . . . . . . . . . . . . . . . . . .  </font>
+                       <font style="float:right">Prénom : . . . . . . . . . . . . . . . . . .. . . . . . . . . . . . . . . . . . . . . . .  </font>
                     </p>
                     <br/>
-                   <div>Mission . . . . . . . . . . . . . . . . . . . .. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . </div> 
+                   <div>Mission : . . . . . . . . . . . . . . . . . . .. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . </div> 
                 </div>   
                     
                  
